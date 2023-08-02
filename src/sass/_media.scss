@@ -1,0 +1,136 @@
+// @use '_colors' as c;
+/* +++++++++++++++++++++++++++++++
+X-Small = xsm = <570px
++++++++++++++++++++++++++++++++ */
+@media (min-width: 351px) {
+	.header {
+		&__quest {
+			&-info1 {
+				display: grid;
+				grid-template-columns: 130px 1fr;
+
+				p:first-child,
+				p:nth-child(1) {
+					grid-column: 1 / 2;
+					grid-row: 1 / -1;
+					align-self: center;
+				}
+				p:last-child,
+				p:nth-child(2) {
+					grid-column: 2 / -1;
+					align-self: center;
+				}
+			}
+		}
+	}
+}
+// ===============================
+@media (min-width: 400px) {
+	.footer {
+		&__sectionA {
+			padding-bottom: 1.5em;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			justify-content: center;
+			gap: 0 11px;
+		}
+		&__btnClear,
+		&__upperText {
+			padding: 0 0.5em;
+		}
+		&__btnClear {
+			grid-column: 2 / -1;
+			order: 2;
+		}
+		&__upperText {
+			grid-column: 1 / 2;
+			order: 1;
+		}
+		&__sectionB {
+			text-align: center;
+		}
+	}
+}
+// ===============================
+@media (min-width: 440px) {
+	.section {
+		&__items {
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 26px 13px;
+		}
+		&__item {
+			min-width: 190px;
+			width: 48%;
+			max-width: 233px;
+		}
+	}
+}
+// ===============================
+@media (min-width: 566px) {
+	.footer {
+		&__sectionA {
+			grid-template-columns: 255px minmax(208px, 293px);
+		}
+	}
+}
+/* +++++++++++++++++++++++++++++++
+Small = sm = >570px
++++++++++++++++++++++++++++++++ */
+@media (min-width: 570px) {
+	.header {
+		&__bar {
+			&-box {
+				display: grid;
+				grid-template-columns: 200px 1fr;
+			}
+			&-section {
+				display: grid;
+				grid-template-columns: 1fr 120px;
+
+				.kappaBoxName,
+				.missingItems {
+					align-self: center;
+					text-align: center;
+					line-height: 24px;
+				}
+				p:first-child {
+					font-size: 1.3rem;
+					font-weight: 700;
+				}
+				p:last-child {
+					font-size: 1.6rem;
+				}
+			}
+		}
+		&__box {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+		&__img {
+			margin-bottom: 0;
+			align-self: center;
+		}
+	}
+}
+// ===============================
+@media (min-width: 749px) {
+	.header {
+		&__quest {
+			&-info3 {
+				align-self: center;
+				max-height: 94px;
+				height: 100%;
+			}
+		}
+	}
+}
+// ===============================
+@media (min-width: 820px) {
+	.header {
+		&__box {
+			margin: 6em auto 2em;
+		}
+	}
+}

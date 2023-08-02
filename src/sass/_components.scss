@@ -1,0 +1,57 @@
+@use '_colors' as c;
+
+a:hover {
+	color: c.$accentB;
+}
+/* +++++++++++++++++++++++++++++++
+HEADER
++++++++++++++++++++++++++++++++ */
+.header {
+	&__img-patch {
+		position: absolute;
+		left: 0;
+		bottom: -8px;
+		padding-left: 1em;
+		font-size: 17px;
+		line-height: 30px;
+		color: c.$accentA;
+		text-shadow: 0.5px 0.5px 1px c.$dark;
+		z-index: 11;
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 0;
+			left: -2px;
+			width: 180px;
+			border-top: 30px solid c.$bgcMain;
+			border-left: 0 transparent;
+			border-right: 30px solid transparent;
+			z-index: -2;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			bottom: -2px;
+			left: 0px;
+			width: 179px;
+			border-top: 32px solid c.$accentA;
+			border-bottom: 0px solid transparent;
+			border-left: 0 transparent;
+			border-right: 32px solid transparent;
+			z-index: -2;
+		}
+	}
+}
+/* +++++++++++++++++++++++++++++++
+FOOTER
++++++++++++++++++++++++++++++++ */
+.footer {
+	&__btnClear {
+		&-btn {
+			.clear:hover {
+				background-color: c.$bgcItemName;
+				color: c.$bgcSecond;
+			}
+		}
+	}
+}
