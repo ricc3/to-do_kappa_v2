@@ -40,6 +40,8 @@ HEADER
 		z-index: 99;
 		background-color: c.$bgcSecond;
 		box-shadow: 0 2px 7px c.$textLink;
+		max-height: 30vh;
+		overflow-y: auto;
 
 		&-box {
 			margin: 0 auto;
@@ -53,7 +55,7 @@ HEADER
 			}
 		}
 		&-section {
-			display: none;
+			// display: none;\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 		}
 	}
 	// img & quest
