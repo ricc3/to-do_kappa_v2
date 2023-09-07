@@ -26,3 +26,5 @@ HMTL5, CSS, JavaScript, moreover Gulp and BEM / SASS
 the entire project is based on information and graphics from the **[official wiki Escape from Tarkov](https://escapefromtarkov.fandom.com/wiki/Escape_from_Tarkov_Wiki)**.
 
 Information about the project as well as _main assumptions_ may change depending on the stage of work.
+
+## **[WEBSITE TO-DO KAPPA](https://ricc3.github.io/to-do_kappa_v2/)**
